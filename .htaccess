@@ -1,0 +1,8 @@
+#Este es un archivo de configuracion de APACHE
+#ENRUTAMIENTO
+
+#Sobre-escribir la Regla de Configuracion Global
+RewriteEngine on
+
+#Redireccionar todas las solicitudes a un recurso
+RewriteRule ^(.*)$ routes.php?url=$1 [L,QSA]
